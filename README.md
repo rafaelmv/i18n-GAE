@@ -2,7 +2,7 @@
 
 We are using WebApp2 framework and Jinja2 templating system
 
-## First we need to install *Babel* 
+## First we need to install **Babel** 
 
 ```shell
 $ sudo pip install babel
@@ -20,7 +20,7 @@ $ zip -r babel.zip babel/*
 # move babel.zip to your project root directory
 ```
 
-## Install *pytz* (use *gae-pytz* for this)
+## Install **pytz** (use **gae-pytz** for this)
 
 ```shell
 # download gaepytz 2011h
@@ -42,7 +42,7 @@ In our `index.html` wrap the string you want to tranlsate in `{{ _("string") }}`
 
 ## babel.cfg
 
-The `*babel.cfg*` file tells babel to extract all translations from all HTML files in your webapp and the encoding of HTML files are utf-8
+The **`babel.cfg`** file tells babel to extract all translations from all HTML files in your webapp and the encoding of HTML files are utf-8
 
 ```
 [javascript: **.html]
@@ -81,11 +81,11 @@ $ pybabel compile -f -d ./locale
 
 Now we only run our server `dev_appserver.py .`
 
-[http://localhost:8080/!](http://127.0.0.1:8080/)
+[http://localhost:8080/](http://127.0.0.1:8080/)
 
 And we see the translation here
 
-[http://localhost:8080/!](http://127.0.0.1:8080/?locale=es_MX)
+[http://localhost:8080/](http://127.0.0.1:8080/?locale=es_MX)
 
 
 When we want to update the translations we re-create the `pot`, update our locales and compile the `po` files
